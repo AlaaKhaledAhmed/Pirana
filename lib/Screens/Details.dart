@@ -29,7 +29,7 @@ class _DetailsState extends State<Details> {
               Navigator.pop(context);
             },
             icon: const Icon(Icons.arrow_back_ios)),
-        title: AppText(text: 'التفاصيل', fontSize: AppSize.textSize),
+        title: AppText(text: 'Details', fontSize: AppSize.textSize),
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
@@ -68,7 +68,7 @@ class _DetailsState extends State<Details> {
                       decoration:
                           GeneralWidget.decoration(color: AppColor.subColor),
                       child: AppText(
-                        text: '${widget.giftData.price} ريال',
+                        text: '${widget.giftData.price} RS',
                         fontSize: AppSize.subTextSize,
                         color: AppColor.white,
                       ),
@@ -99,10 +99,10 @@ class _DetailsState extends State<Details> {
                         onPressed: () {
                           Navigator.pop(context);
                           AppLoading.show(context, widget.giftData.name,
-                              'تم اضافة العنصر الى السله بنجاح');
+                              "The item has been successfully added to the cart.");
 
                         },
-                        text: 'اضافة الى السلة')),
+                        text:"Add to Cart")),
                 SizedBox(
                   width: 10.w,
                 ),

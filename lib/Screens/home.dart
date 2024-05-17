@@ -162,7 +162,7 @@ class _HomeState extends State<Home> {
 //price=======================================================================
                     AppText(
                       fontWeight: FontWeight.bold,
-                      text: '${GiftsModel.giftsList[index].price} ريال',
+                      text: '${GiftsModel.giftsList[index].price} RS',
                       fontSize: AppSize.smallText,
                       color: AppColor.mainColor,
                     ),

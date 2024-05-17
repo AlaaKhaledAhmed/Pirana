@@ -13,91 +13,92 @@ class GiftsModel {
 
   static List<GiftsModel> giftsList = [
     GiftsModel(
-      name: 'زهور جميلة',
+      name: 'Beautiful Flowers',
       description:
-          'باقة من الزهور الجميلة تحتوي على مجموعة متنوعة من الأزهار النادرة والملونة، تم اختيارها بعناية فائقة لتناسب جميع المناسبات. '
-          'هذه الباقة تزرع الابتسامة على وجه من تحب وتعبر عن أسمى مشاعر الحب والتقدير. '
-          'الأزهار مغلفة بأناقة وجمال لتعطي إحساساً بالروعة والتميز. '
-          'هدية مثالية لتزيين المنزل وإضفاء جو من السعادة والبهجة.',
+      'A bouquet of beautiful flowers containing a variety of rare and colorful flowers, carefully selected to suit all occasions. '
+          'This bouquet brings a smile to the face of your loved one and expresses the highest feelings of love and appreciation. '
+          'The flowers are elegantly and beautifully wrapped to give a sense of splendor and distinction. '
+          'A perfect gift to decorate the house and add an atmosphere of happiness and joy.',
       price: 50.0,
       imageUrl:
-          'https://images.pexels.com/photos/1488310/pexels-photo-1488310.jpeg',
+      'https://images.pexels.com/photos/1488310/pexels-photo-1488310.jpeg',
     ),
     GiftsModel(
-      name: 'ساعة فاخرة',
-      description: 'ساعة أنيقة وعصرية مصنوعة من أجود المواد وبأحدث التقنيات. '
-          'تتميز بتصميمها الفريد الذي يدمج بين الكلاسيكية والحداثة، مما يجعلها مناسبة لجميع الأوقات والمناسبات. '
-          'تأتي بعلبة فاخرة تضيف لمسة من الفخامة والأناقة عند تقديمها كهدية. '
-          'ساعة تعكس الذوق الرفيع والشخصية المتميزة لمن يرتديها.',
+      name: 'Luxury Watch',
+      description: 'An elegant and modern watch made from the finest materials with the latest technology. '
+          'It features a unique design that blends classic and modern elements, making it suitable for all times and occasions. '
+          'Comes in a luxurious box that adds a touch of luxury and elegance when presented as a gift. '
+          'A watch that reflects the refined taste and distinctive personality of the wearer.',
       price: 250.0,
       imageUrl:
-          'https://c4.wallpaperflare.com/wallpaper/729/338/570/watch-luxury-watches-ulysse-nardin-wallpaper-preview.jpg',
+      'https://c4.wallpaperflare.com/wallpaper/729/338/570/watch-luxury-watches-ulysse-nardin-wallpaper-preview.jpg',
     ),
     GiftsModel(
-      name: 'عطر احساس',
+      name: 'Ehsas Perfume',
       description:
-          'عطر برائحة منعشة تدوم طويلاً، مزيج من النوتات الزهرية والخشبية التي تأسر الحواس. '
-          'صُنع هذا العطر خصيصاً ليضفي لمسة من الجاذبية والأناقة لمن يستخدمه. '
-          'تغليفه الفاخر يجعل منه هدية مثالية لكل من يبحث عن التميز والتفرد. '
-          'عطر يناسب جميع الأذواق ويترك انطباعاً لا يُنسى.',
+      'A long-lasting refreshing scent, a blend of floral and woody notes that captivates the senses. '
+          'This perfume is specially crafted to add a touch of allure and elegance to its user. '
+          'Its luxurious packaging makes it a perfect gift for those seeking uniqueness and individuality. '
+          'A perfume that suits all tastes and leaves an unforgettable impression.',
       price: 100.0,
       imageUrl:
-          'https://cdn.salla.sa/Bnxgq/TokFI8etmftBqIpaMUf1mZr7Bjiz34Y0d6sbkD7x.jpg',
+      'https://cdn.salla.sa/Bnxgq/TokFI8etmftBqIpaMUf1mZr7Bjiz34Y0d6sbkD7x.jpg',
     ),
     GiftsModel(
-      name: 'علبة شوكولاتة',
+      name: 'Chocolate Box',
       description:
-          'مجموعة مختارة من أفضل أنواع الشوكولاتة المصنوعة من أفخر حبوب الكاكاو. '
-          'تحتوي العلبة على تشكيلة متنوعة من النكهات لتناسب جميع الأذواق، من الشوكولاتة الداكنة إلى الشوكولاتة البيضاء. '
-          'تأتي في علبة أنيقة تعكس الفخامة والجودة، مما يجعلها هدية مثالية لكل المناسبات. '
-          'تجربة لا تُنسى لكل محبي الشوكولاتة.',
+      'A selection of the finest chocolates made from premium cocoa beans. '
+          'The box contains a variety of flavors to suit all tastes, from dark chocolate to white chocolate. '
+          'Comes in an elegant box that reflects luxury and quality, making it a perfect gift for all occasions. '
+          'An unforgettable experience for all chocolate lovers.',
       price: 30.0,
       imageUrl:
-          'https://w0.peakpx.com/wallpaper/781/62/HD-wallpaper-chocolates-brown-food-chocolate-box-bow-gift-sweet-dessert-truffles-white.jpg',
+      'https://w0.peakpx.com/wallpaper/781/62/HD-wallpaper-chocolates-brown-food-chocolate-box-bow-gift-sweet-dessert-truffles-white.jpg',
     ),
     GiftsModel(
-      name: 'فازة زهور',
+      name: 'Flower Vase',
       description:
-          'باقة من الزهور الجميلة تحتوي على مجموعة متنوعة من الأزهار النادرة والملونة، تم اختيارها بعناية فائقة لتناسب جميع المناسبات. '
-          'هذه الباقة تزرع الابتسامة على وجه من تحب وتعبر عن أسمى مشاعر الحب والتقدير. '
-          'الأزهار مغلفة بأناقة وجمال لتعطي إحساساً بالروعة والتميز. '
-          'هدية مثالية لتزيين المنزل وإضفاء جو من السعادة والبهجة.',
+      'A bouquet of beautiful flowers containing a variety of rare and colorful flowers, carefully selected to suit all occasions. '
+          'This bouquet brings a smile to the face of your loved one and expresses the highest feelings of love and appreciation. '
+          'The flowers are elegantly and beautifully wrapped to give a sense of splendor and distinction. '
+          'A perfect gift to decorate the house and add an atmosphere of happiness and joy.',
       price: 50.0,
       imageUrl:
-          'https://c4.wallpaperflare.com/wallpaper/635/605/180/roses-flowers-pot-petals-wallpaper-preview.jpg',
+      'https://c4.wallpaperflare.com/wallpaper/635/605/180/roses-flowers-pot-petals-wallpaper-preview.jpg',
     ),
     GiftsModel(
-      name: 'مجوهرات راقية',
+      name: 'Elegant Jewelry',
       description:
-          'قلادة وسوار من الذهب عيار 18 مصممان بإتقان ليعكسا الرقي والأناقة. '
-          'كل قطعة مجوهرات تحمل تفاصيل دقيقة وجميلة تجعل منها هدية مميزة لا تُنسى. '
-          'تأتي في علبة فاخرة تضيف لمسة من الجمال والفخامة عند تقديمها كهدية. '
-          'مجوهرات تعبر عن الحب والاهتمام بالشخص المهدى إليه.',
+      'An 18-karat gold necklace and bracelet designed with precision to reflect elegance and sophistication. '
+          'Each piece of jewelry features intricate and beautiful details, making it a unique and unforgettable gift. '
+          'Comes in a luxurious box that adds a touch of beauty and luxury when presented as a gift. '
+          'Jewelry that expresses love and care for the recipient.',
       price: 500.0,
       imageUrl:
-          'https://c4.wallpaperflare.com/wallpaper/428/794/415/shine-ring-diamonds-decoration-ring-hd-wallpaper-preview.jpg',
+      'https://c4.wallpaperflare.com/wallpaper/428/794/415/shine-ring-diamonds-decoration-ring-hd-wallpaper-preview.jpg',
     ),
     GiftsModel(
-      name: 'لعبة أطفال',
+      name: 'Children\'s Toy',
       description:
-          'لعبة ترفيهية وتعليمية للأطفال تساعد على تنمية المهارات الحركية والفكرية. '
-          'مصنوعة من مواد آمنة وملونة بألوان زاهية لجذب انتباه الأطفال وتحفيزهم على اللعب والتعلم. '
-          'تصميمها الفريد يجعلها مناسبة للأطفال من مختلف الأعمار، وتقدم ساعات من المرح والتسلية. '
-          'هدية رائعة لإسعاد الأطفال وتحفيز خيالهم.',
+      'An entertaining and educational toy for children that helps develop motor and cognitive skills. '
+          'Made from safe materials and colored with bright colors to attract children\'s attention and stimulate them to play and learn. '
+          'Its unique design makes it suitable for children of all ages, providing hours of fun and entertainment. '
+          'A great gift to make children happy and stimulate their imagination.',
       price: 40.0,
       imageUrl: 'https://c0.wallpaperflare.com/preview/265/849/245/toys.jpg',
     ),
     GiftsModel(
-      name: 'كوب قهوة مخصص',
-      description: 'كوب قهوة يحمل اسمك أو رسالة مخصصة لتبدأ يومك بابتسامة. '
-          'مصنوع من الخزف عالي الجودة ويأتي بتصميم أنيق يمكن تخصيصه بأشكال وألوان مختلفة. '
-          'هدية مثالية لعشاق القهوة والشاي، تضيف لمسة شخصية لكل صباح. '
-          'يأتي في علبة جميلة تجعله هدية مثالية لكل المناسبات.',
+      name: 'Custom Coffee Mug',
+      description: 'A coffee mug with your name or a custom message to start your day with a smile. '
+          'Made from high-quality ceramic and comes in an elegant design that can be customized with different shapes and colors. '
+          'A perfect gift for coffee and tea lovers, adding a personal touch to every morning. '
+          'Comes in a beautiful box making it an ideal gift for all occasions.',
       price: 15.0,
       imageUrl:
-          'https://www.duomugs.com/cdn/shop/files/10362194369961499227_2048.jpg?v=1691225561&width=533',
+      'https://www.duomugs.com/cdn/shop/files/10362194369961499227_2048.jpg?v=1691225561&width=533',
     ),
   ];
+
 
   static List bannerImage = [
     'https://static.vecteezy.com/system/resources/previews/001/270/566/non_2x/black-friday-sale-banner-with-white-and-black-gift-boxes-vector.jpg',
@@ -108,11 +109,11 @@ class GiftsModel {
     'https://detourtocanada.ca/wp-content/uploads/2021/12/FEATURE-PART-2-1024x576.png'
   ];
   static List<GiftsModel> category = [
-    GiftsModel(name: 'عطور', imageUrl: Assets.svgPerfume),
-    GiftsModel(name: 'مكياج', imageUrl: Assets.svgMadcap),
-    GiftsModel(name: 'سماعات', imageUrl: Assets.svgHeadphones),
-    GiftsModel(name: 'ملابس', imageUrl: Assets.svgClothes),
-    GiftsModel(name: 'نظارات', imageUrl: Assets.svgSunglasses),
-
+    GiftsModel(name: 'Perfumes', imageUrl: Assets.svgPerfume),
+    GiftsModel(name: 'Makeup', imageUrl: Assets.svgMadcap),
+    GiftsModel(name: 'Headphones', imageUrl: Assets.svgHeadphones),
+    GiftsModel(name: 'Clothes', imageUrl: Assets.svgClothes),
+    GiftsModel(name: 'Sunglasses', imageUrl: Assets.svgSunglasses),
   ];
+
 }

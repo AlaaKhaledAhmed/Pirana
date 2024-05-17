@@ -27,8 +27,7 @@ class _MyAppState extends State<MyApp> {
         builder: (_, __) => MaterialApp(
               home: const SplashScreen(),
               builder: (context, widget) {
-                return Directionality(
-                    textDirection: TextDirection.rtl, child: widget!);
+                return widget!;
               },
               debugShowCheckedModeBanner: false,
               theme: ThemeData(

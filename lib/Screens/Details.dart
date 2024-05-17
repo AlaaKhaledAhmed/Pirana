@@ -9,7 +9,7 @@ import 'package:gift/Widget/GeneralWidget.dart';
 import 'package:gift/model/model.dart';
 
 class Details extends StatefulWidget {
-  final Gifts giftData;
+  final GiftsModel giftData;
   const Details({super.key, required this.giftData});
 
   @override

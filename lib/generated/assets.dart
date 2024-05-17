@@ -5,6 +5,7 @@ class Assets {
   static const String imageGift = 'assets/image/gift.png';
   static const String svgClothes = 'assets/svg/clothes.svg';
   static const String svgHeadphones = 'assets/svg/headphones.svg';
+  static const String svgLogo = 'assets/svg/logo.svg';
   static const String svgMadcap = 'assets/svg/madcap.svg';
   static const String svgPerfume = 'assets/svg/perfume.svg';
   static const String svgSunglasses = 'assets/svg/sunglasses.svg';

@@ -6,10 +6,10 @@ import 'package:gift/Screens/Details.dart';
 import 'package:gift/Widget/AppRoutes.dart';
 import 'package:gift/Widget/AppSize.dart';
 import 'package:gift/Widget/AppText.dart';
+import 'package:gift/model/model.dart';
 import '../Widget/AppColor.dart';
 import '../Widget/GeneralWidget.dart';
 import '../generated/assets.dart';
-import '../model/model.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -56,11 +56,12 @@ class _HomeState extends State<Home> {
         autoplay: true,
         loop: true,
         pagination: const SwiperPagination(),
-        itemCount: Gifts.bannerImage.length,
+        itemCount: GiftsModel.bannerImage.length,
         itemBuilder: (contextSwiper, index) => FadeInImage(
-          image: NetworkImage(Gifts.bannerImage[index]),
+          image: NetworkImage(GiftsModel.bannerImage[index]),
           placeholderFit: BoxFit.contain,
           placeholder: const AssetImage(Assets.imageGift),
+
           imageErrorBuilder: (context, error, stackTrace) => Container(
             color: AppColor.deepLightGrey,
           ),
@@ -77,15 +78,16 @@ class _HomeState extends State<Home> {
   /// category=======================================================================
   Widget category() {
     return SizedBox(
-      height: 90.h,
+      height: 100.h,
       width: double.maxFinite,
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
-          itemCount: Gifts.category.length,
+          itemCount: GiftsModel.category.length,
           itemBuilder: (c, index) {
             return Container(
               width: 90.w,
-              margin: EdgeInsets.only(left: 8.w),
+              height: 100.h,
+              margin: EdgeInsets.symmetric(horizontal: 5.w),
               padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
               decoration: GeneralWidget.decoration(),
               child: Column(
@@ -93,7 +95,7 @@ class _HomeState extends State<Home> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SvgPicture.asset(
-                    Gifts.category[index].imageUrl,
+                    GiftsModel.category[index].imageUrl,
                     width: 50.w,
                     height: 50.w,
                   ),
@@ -102,7 +104,7 @@ class _HomeState extends State<Home> {
                   ),
                   AppText(
                       fontWeight: FontWeight.bold,
-                      text: Gifts.category[index].name,
+                      text: GiftsModel.category[index].name,
                       fontSize: AppSize.smallText)
                 ],
               ),
@@ -115,7 +117,7 @@ class _HomeState extends State<Home> {
   Widget giftsWidget() {
     return Expanded(
       child: GridView.builder(
-          itemCount: Gifts.giftsList.length,
+          itemCount: GiftsModel.giftsList.length,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2, //عدد العناصر في كل صف
               crossAxisSpacing: 10.h, // المسافات الراسية
@@ -126,40 +128,41 @@ class _HomeState extends State<Home> {
           itemBuilder: (c, index) {
             return InkWell(
               onTap: (){
-                AppRoutes.pushTo(context, Details(giftData:Gifts.giftsList[index]));
+                AppRoutes.pushTo(context, Details(giftData:GiftsModel.giftsList[index]));
               }
               ,
               child: Container(
                 width: GeneralWidget.width(context),
-                decoration: GeneralWidget.decoration(),
+                decoration: GeneralWidget.decoration(shadow: false),
+                margin:  EdgeInsets.symmetric(horizontal: 5.w),
                 child: Column(
                   children: [
-              //image=======================================================================
+//image=======================================================================
                     Container(
                       height: 100.h,
                       margin: EdgeInsets.all(5.spMin),
                       decoration: GeneralWidget.decoration(
                           shadow: false,
                           cover: true,
-                          image: NetworkImage(Gifts.giftsList[index].imageUrl)),
+                          image: NetworkImage(GiftsModel.giftsList[index].imageUrl)),
                     ),
                     SizedBox(
                       height: 10.h,
                     ),
-              //name=======================================================================
+//name=======================================================================
                     AppText(
                       fontWeight: FontWeight.bold,
-                      text: Gifts.giftsList[index].name,
+                      text: GiftsModel.giftsList[index].name,
                       fontSize: AppSize.subTextSize,
                       color: AppColor.subColor,
                     ),
                     SizedBox(
                       height: 10.h,
                     ),
-              //price=======================================================================
+//price=======================================================================
                     AppText(
                       fontWeight: FontWeight.bold,
-                      text: '${Gifts.giftsList[index].price} ريال',
+                      text: '${GiftsModel.giftsList[index].price} ريال',
                       fontSize: AppSize.smallText,
                       color: AppColor.mainColor,
                     ),

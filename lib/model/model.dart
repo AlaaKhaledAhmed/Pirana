@@ -1,18 +1,18 @@
 import '../generated/assets.dart';
 
-class Gifts {
+class GiftsModel {
   final String name;
   final String? description;
   final String imageUrl;
   final double? price;
-  Gifts(
+  GiftsModel(
       {required this.name,
       required this.imageUrl,
       this.description,
       this.price});
 
-  static List<Gifts> giftsList = [
-    Gifts(
+  static List<GiftsModel> giftsList = [
+    GiftsModel(
       name: 'زهور جميلة',
       description:
           'باقة من الزهور الجميلة تحتوي على مجموعة متنوعة من الأزهار النادرة والملونة، تم اختيارها بعناية فائقة لتناسب جميع المناسبات. '
@@ -23,7 +23,7 @@ class Gifts {
       imageUrl:
           'https://images.pexels.com/photos/1488310/pexels-photo-1488310.jpeg',
     ),
-    Gifts(
+    GiftsModel(
       name: 'ساعة فاخرة',
       description: 'ساعة أنيقة وعصرية مصنوعة من أجود المواد وبأحدث التقنيات. '
           'تتميز بتصميمها الفريد الذي يدمج بين الكلاسيكية والحداثة، مما يجعلها مناسبة لجميع الأوقات والمناسبات. '
@@ -33,7 +33,7 @@ class Gifts {
       imageUrl:
           'https://c4.wallpaperflare.com/wallpaper/729/338/570/watch-luxury-watches-ulysse-nardin-wallpaper-preview.jpg',
     ),
-    Gifts(
+    GiftsModel(
       name: 'عطر احساس',
       description:
           'عطر برائحة منعشة تدوم طويلاً، مزيج من النوتات الزهرية والخشبية التي تأسر الحواس. '
@@ -44,7 +44,7 @@ class Gifts {
       imageUrl:
           'https://cdn.salla.sa/Bnxgq/TokFI8etmftBqIpaMUf1mZr7Bjiz34Y0d6sbkD7x.jpg',
     ),
-    Gifts(
+    GiftsModel(
       name: 'علبة شوكولاتة',
       description:
           'مجموعة مختارة من أفضل أنواع الشوكولاتة المصنوعة من أفخر حبوب الكاكاو. '
@@ -55,7 +55,7 @@ class Gifts {
       imageUrl:
           'https://w0.peakpx.com/wallpaper/781/62/HD-wallpaper-chocolates-brown-food-chocolate-box-bow-gift-sweet-dessert-truffles-white.jpg',
     ),
-    Gifts(
+    GiftsModel(
       name: 'فازة زهور',
       description:
           'باقة من الزهور الجميلة تحتوي على مجموعة متنوعة من الأزهار النادرة والملونة، تم اختيارها بعناية فائقة لتناسب جميع المناسبات. '
@@ -66,7 +66,7 @@ class Gifts {
       imageUrl:
           'https://c4.wallpaperflare.com/wallpaper/635/605/180/roses-flowers-pot-petals-wallpaper-preview.jpg',
     ),
-    Gifts(
+    GiftsModel(
       name: 'مجوهرات راقية',
       description:
           'قلادة وسوار من الذهب عيار 18 مصممان بإتقان ليعكسا الرقي والأناقة. '
@@ -77,7 +77,7 @@ class Gifts {
       imageUrl:
           'https://c4.wallpaperflare.com/wallpaper/428/794/415/shine-ring-diamonds-decoration-ring-hd-wallpaper-preview.jpg',
     ),
-    Gifts(
+    GiftsModel(
       name: 'لعبة أطفال',
       description:
           'لعبة ترفيهية وتعليمية للأطفال تساعد على تنمية المهارات الحركية والفكرية. '
@@ -87,7 +87,7 @@ class Gifts {
       price: 40.0,
       imageUrl: 'https://c0.wallpaperflare.com/preview/265/849/245/toys.jpg',
     ),
-    Gifts(
+    GiftsModel(
       name: 'كوب قهوة مخصص',
       description: 'كوب قهوة يحمل اسمك أو رسالة مخصصة لتبدأ يومك بابتسامة. '
           'مصنوع من الخزف عالي الجودة ويأتي بتصميم أنيق يمكن تخصيصه بأشكال وألوان مختلفة. '
@@ -107,12 +107,12 @@ class Gifts {
     'https://giftbox.ai/img/giftbox_facebook.png',
     'https://detourtocanada.ca/wp-content/uploads/2021/12/FEATURE-PART-2-1024x576.png'
   ];
-  static List<Gifts> category = [
-    Gifts(name: 'عطور', imageUrl: Assets.svgPerfume),
-    Gifts(name: 'مكياج', imageUrl: Assets.svgMadcap),
-    Gifts(name: 'سماعات', imageUrl: Assets.svgHeadphones),
-    Gifts(name: 'ملابس', imageUrl: Assets.svgClothes),
-    Gifts(name: 'نظارات', imageUrl: Assets.svgSunglasses),
+  static List<GiftsModel> category = [
+    GiftsModel(name: 'عطور', imageUrl: Assets.svgPerfume),
+    GiftsModel(name: 'مكياج', imageUrl: Assets.svgMadcap),
+    GiftsModel(name: 'سماعات', imageUrl: Assets.svgHeadphones),
+    GiftsModel(name: 'ملابس', imageUrl: Assets.svgClothes),
+    GiftsModel(name: 'نظارات', imageUrl: Assets.svgSunglasses),
 
   ];
 }

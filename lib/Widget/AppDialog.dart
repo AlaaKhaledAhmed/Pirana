@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gift/Widget/GeneralWidget.dart';
-import 'package:lottie/lottie.dart';
-import 'AppButtons.dart';
 import 'AppColor.dart';
 import 'AppSize.dart';
 import 'AppText.dart';

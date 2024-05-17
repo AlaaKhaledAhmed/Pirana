@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'AppColor.dart';
-import 'AppSize.dart';
-
+ 
 
 typedef RefreshUi = VoidCallback;
 

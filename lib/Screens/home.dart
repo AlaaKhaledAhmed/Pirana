@@ -21,6 +21,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int currentIndex = 0;
   int swiperIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +44,7 @@ class _HomeState extends State<Home> {
     );
   }
 
-  ///show line images ===============================================================================
+  /// Widget to display a swiper of banner images at the top of the screen
   Widget bannerImageWidget() {
     return Container(
       decoration: GeneralWidget.decoration(
@@ -61,7 +62,6 @@ class _HomeState extends State<Home> {
           image: NetworkImage(GiftsModel.bannerImage[index]),
           placeholderFit: BoxFit.contain,
           placeholder: const AssetImage(Assets.imageGift),
-
           imageErrorBuilder: (context, error, stackTrace) => Container(
             color: AppColor.deepLightGrey,
           ),
@@ -75,10 +75,10 @@ class _HomeState extends State<Home> {
     );
   }
 
-  /// category=======================================================================
+  /// Widget to display a horizontal list of categories
   Widget category() {
     return SizedBox(
-      height: 100.h,
+      height: 120.h,
       width: double.maxFinite,
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
@@ -113,43 +113,43 @@ class _HomeState extends State<Home> {
     );
   }
 
-  ///gift list=================================================================
+  /// Widget to display a grid of gift items
   Widget giftsWidget() {
     return Expanded(
       child: GridView.builder(
           itemCount: GiftsModel.giftsList.length,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2, //عدد العناصر في كل صف
-              crossAxisSpacing: 10.h, // المسافات الراسية
-              childAspectRatio: 0.90, //حجم العناصر
-              mainAxisSpacing: 10.h //المسافات الافقية
-
-              ),
+              crossAxisCount: 2, // Number of items per row
+              crossAxisSpacing: 10.h, // Vertical spacing
+              childAspectRatio: 0.90, // Item aspect ratio
+              mainAxisSpacing: 10.h // Horizontal spacing
+          ),
           itemBuilder: (c, index) {
             return InkWell(
-              onTap: (){
-                AppRoutes.pushTo(context, Details(giftData:GiftsModel.giftsList[index]));
-              }
-              ,
+              onTap: () {
+                AppRoutes.pushTo(
+                    context, Details(giftData: GiftsModel.giftsList[index]));
+              },
               child: Container(
                 width: GeneralWidget.width(context),
                 decoration: GeneralWidget.decoration(shadow: false),
-                margin:  EdgeInsets.symmetric(horizontal: 5.w),
+                margin: EdgeInsets.symmetric(horizontal: 5.w),
                 child: Column(
                   children: [
-//image=======================================================================
+                    // Image of the gift item
                     Container(
                       height: 100.h,
                       margin: EdgeInsets.all(5.spMin),
                       decoration: GeneralWidget.decoration(
                           shadow: false,
                           cover: true,
-                          image: NetworkImage(GiftsModel.giftsList[index].imageUrl)),
+                          image: NetworkImage(
+                              GiftsModel.giftsList[index].imageUrl)),
                     ),
                     SizedBox(
                       height: 10.h,
                     ),
-//name=======================================================================
+                    // Name of the gift item
                     AppText(
                       fontWeight: FontWeight.bold,
                       text: GiftsModel.giftsList[index].name,
@@ -159,7 +159,7 @@ class _HomeState extends State<Home> {
                     SizedBox(
                       height: 10.h,
                     ),
-//price=======================================================================
+                    // Price of the gift item
                     AppText(
                       fontWeight: FontWeight.bold,
                       text: '${GiftsModel.giftsList[index].price} RS',
